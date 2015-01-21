@@ -6,3 +6,78 @@ input,button,img,h1,h2{
     padding: 0;
     border: 0;
 }
+body{
+	font-size: 62.5%;
+}
+
+section.hero{
+	color: white;
+	max-width: 100em;
+	margin: 0 auto;
+	background: url(../images/find-an-agent-hero.png);
+	background-size: cover;
+	padding-bottom: 2em;
+}
+
+section.hero header img{
+	float: left;
+	width: 120px;
+	height: 50px;
+	margin: 1em 0 0 1em;
+	margin-top: 2em;
+}
+section.hero header ul{
+	float: right;
+	margin-right: 1em;
+	margin-top: 1em;
+}
+
+section.hero header ul li{
+	list-style: none;
+	float: left;
+	margin: 0 1em 0 1em;
+	font-size: 1.4em;
+	border-radius: 4px;
+}
+
+section.hero header ul li:hover{
+	color: green;
+	cursor: pointer;
+}
+section.hero header ul li:last-child{
+	border: 1px solid white;
+}
+section.hero h1{
+	text-align: center;
+	clear: both;
+	font-size: 4em;
+	padding-top: 2em;
+}
+section.hero h2{
+	font-size: 2em;
+	text-align: center;
+}
+
+section.hero form{
+	margin-top: 1em;
+	text-align: center;
+}
+
+section.hero form input{
+	width: 20em;
+	height: 4em;
+	background: rgba(255,255,255,.2);
+	font-size: 1em;
+}
+
+section.hero form button{
+	background-color: lightgreen;
+	color: white;
+	height: 4em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+section.hero form button:hover{
+	background-color: green;
+	cursor: pointer;
+}
