@@ -1,5 +1,5 @@
 /* line 8, /Users/twer/Documents/work/scss/mystyle.scss */
-body, section, form, header, ul, li, input, button, img, h1, h2 {
+body, section, form, header, ol, ul, li, input, button, img, h1, h2 {
   margin: 0;
   padding: 0;
   border: 0; }
@@ -124,47 +124,143 @@ section.how-it-works {
   /* line 134, /Users/twer/Documents/work/scss/mystyle.scss */
   section.how-it-works hr {
     width: 2em; }
+  /* line 138, /Users/twer/Documents/work/scss/mystyle.scss */
+  section.how-it-works ol {
+    text-align: center; }
+    /* line 140, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.how-it-works ol li {
+      text-align: center;
+      float: left;
+      width: 33.3%;
+      list-style: none;
+      position: relative; }
+      /* line 146, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.how-it-works ol li span.number {
+        display: block;
+        font-size: 1.4em;
+        line-height: 2;
+        font-weight: bold;
+        border: 1px solid black;
+        height: 2em;
+        width: 2em;
+        border-radius: 2em;
+        margin: 0 auto; }
+      /* line 157, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.how-it-works ol li:after {
+        font-size: 1em;
+        content: "";
+        background: #ccc;
+        top: 1.4em;
+        width: calc(100% - 2.8em);
+        left: 50%;
+        margin-left: 1.4em;
+        z-index: -1;
+        height: 1px;
+        display: block;
+        position: absolute; }
+      /* line 171, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.how-it-works ol li:last-child:after {
+        display: none; }
+      /* line 174, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.how-it-works ol li p {
+        margin: 0 auto;
+        width: 57%; }
 
-/* line 139, /Users/twer/Documents/work/scss/mystyle.scss */
-section.content {
+/* line 181, /Users/twer/Documents/work/scss/mystyle.scss */
+section.why-choose-us {
+  max-width: 100em;
+  margin: 0 auto;
+  padding-top: 13em;
+  text-align: center; }
+  /* line 185, /Users/twer/Documents/work/scss/mystyle.scss */
+  section.why-choose-us hr {
+    width: 2em; }
+  /* line 189, /Users/twer/Documents/work/scss/mystyle.scss */
+  section.why-choose-us ol {
+    text-align: center; }
+    /* line 191, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.why-choose-us ol li {
+      list-style: none;
+      text-align: center;
+      padding: 0 5%;
+      width: 40%;
+      float: left; }
+      /* line 197, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.why-choose-us ol li h3 {
+        float: left;
+        width: 2em;
+        font-size: 2em; }
+      /* line 202, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.why-choose-us ol li h4 {
+        text-align: left; }
+      /* line 205, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.why-choose-us ol li p {
+        width: 80%;
+        text-align: left; }
+
+/* line 214, /Users/twer/Documents/work/scss/mystyle.scss */
+section.bottom {
   max-width: 100em;
   margin: 0 auto; }
-  /* line 142, /Users/twer/Documents/work/scss/mystyle.scss */
-  section.content ol li {
-    text-align: center;
-    float: left;
-    width: 33.3%;
+  /* line 217, /Users/twer/Documents/work/scss/mystyle.scss */
+  section.bottom ol li {
     list-style: none;
-    position: relative; }
-    /* line 148, /Users/twer/Documents/work/scss/mystyle.scss */
-    section.content ol li span.number {
-      display: block;
-      font-size: 1.4em;
-      line-height: 2;
-      font-weight: bold;
-      border: 1px solid black;
-      height: 2em;
-      width: 2em;
-      border-radius: 2em;
-      margin: 0 auto; }
-    /* line 159, /Users/twer/Documents/work/scss/mystyle.scss */
-    section.content ol li:after {
+    text-align: center; }
+    /* line 220, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.bottom ol li button {
+      width: 10em;
+      height: 3em;
       font-size: 1em;
-      content: "";
-      background: #ccc;
-      top: 1.4em;
-      width: calc(100% - 2.8em);
-      left: 50%;
-      margin-left: 1.4em;
-      z-index: -1;
-      height: 1px;
-      display: block;
-      position: absolute; }
-    /* line 173, /Users/twer/Documents/work/scss/mystyle.scss */
-    section.content ol li:last-child:after {
-      display: none; }
-    /* line 176, /Users/twer/Documents/work/scss/mystyle.scss */
-    section.content ol li p {
-      width: 80%; }
+      background: white;
+      border: 1px solid black; }
+      /* line 226, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.bottom ol li button:hover {
+        background: lightblue; }
+    /* line 230, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.bottom ol li p {
+      font-size: 2em; }
+    /* line 233, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.bottom ol li label {
+      font-size: 4em; }
+    /* line 236, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.bottom ol li img {
+      width: 4em;
+      height: 4em;
+      border-radius: 4em; }
+
+/* line 245, /Users/twer/Documents/work/scss/mystyle.scss */
+section.footer {
+  max-width: 100em;
+  margin: 0 auto; }
+  /* line 247, /Users/twer/Documents/work/scss/mystyle.scss */
+  section.footer div.finder {
+    padding-top: 10em;
+    vertical-align: middle;
+    text-align: center;
+    height: 10em;
+    background: url(../images/find-an-agent-hero.png); }
+    /* line 253, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.footer div.finder label {
+      font-size: 3em; }
+    /* line 256, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.footer div.finder input {
+      height: 3em; }
+  /* line 261, /Users/twer/Documents/work/scss/mystyle.scss */
+  section.footer div.nav {
+    height: 2em; }
+    /* line 263, /Users/twer/Documents/work/scss/mystyle.scss */
+    section.footer div.nav ul {
+      height: 2em; }
+      /* line 265, /Users/twer/Documents/work/scss/mystyle.scss */
+      section.footer div.nav ul li {
+        float: left;
+        display: block;
+        width: auto;
+        margin-left: 1em;
+        font-size: 2em; }
+        /* line 271, /Users/twer/Documents/work/scss/mystyle.scss */
+        section.footer div.nav ul li a {
+          text-decoration: none;
+          color: #ccc; }
 
 /*# sourceMappingURL=mystyle.css.map */

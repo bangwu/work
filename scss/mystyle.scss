@@ -4,7 +4,7 @@
 }
 body,
 section,form,
-header,ul,li,
+header,ol,ul,li,
 input,button,img,h1,h2{
     margin: 0;
     padding: 0;
@@ -134,11 +134,9 @@ section.how-it-works{
 	hr{
 		width: 2em;
 	}
-}
 
-section.content{
-	@include common-section();
 	ol{
+		text-align: center;
 		li{
 			text-align: center;
 			float: left;
@@ -174,7 +172,106 @@ section.content{
 				display: none;
 			}
 			p{
+				margin: 0 auto;
+				width: 57%;
+			}
+		}
+	}
+}
+section.why-choose-us{
+	@include common-section();
+	padding-top: 13em;
+	text-align: center;
+	hr{
+		width: 2em;
+	}
+	
+	ol{
+		text-align: center;
+		li{
+			list-style: none;
+			text-align: center;
+			padding: 0 5%;
+			width: 40%;
+			float: left;
+			h3{
+				float: left;
+				width: 2em;
+				font-size: 2em;
+			}
+			h4{
+				text-align: left;
+			}
+			p{
 				width: 80%;
+				text-align: left;
+			}
+			
+		}
+	}
+}
+
+section.bottom{
+	@include common-section();
+	ol{
+		li{
+			list-style: none;
+			text-align: center;
+			button{
+				width: 10em;
+				height: 3em;
+				font-size: 1em;
+				background: white;
+				border: 1px solid black;
+				&:hover{
+					background: lightblue;
+				}
+			}
+			p{
+				font-size: 2em;
+			}
+			label{
+				font-size: 4em;
+			}
+			img{
+				width: 4em;
+				height: 4em;
+				border-radius: 4em;
+			}
+		}
+	}
+}
+
+section.footer{
+	@include common-section();
+	div.finder{
+		padding-top: 10em;
+		vertical-align: middle;
+		text-align: center;
+		height: 10em;
+		background: url(../images/find-an-agent-hero.png);
+		label{
+			font-size: 3em;
+		}
+		input{
+			height: 3em;
+		}
+	}
+	
+	div.nav{
+		height: 2em;
+		ul{
+			height: 2em;
+			li{
+				float: left;
+				display: block;
+				width: auto;
+				margin-left: 1em;
+				font-size: 2em;
+				a{
+					text-decoration: none;
+					color: #ccc;
+				}
 			}
 		}
 	}
