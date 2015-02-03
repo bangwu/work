@@ -1,0 +1,55 @@
+@import "reset";
+@import "base";
+@mixin common-section{
+	max-width: 100em;
+	margin: 0 auto;
+}
+
+$main-color :lightblue;
+
+body{
+	font-size: 62.5%;
+    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	background: $main-color;
+}
+
+section.header{
+	background: white;
+	height: 4em;
+	div.dashboard{
+		background: white;
+		display: block;
+		border-right: 1px solid black;
+		float: left;
+		height: 4em;
+		width: 4em;
+		div.home{
+			width: 2em;
+			height: 1.5em;
+			background: $main-color;
+			text-align: center;
+			border-radius: 2em;
+			font-size: 2em;
+			padding-top: 0.5em;
+		}
+		
+	}
+	div.center{
+		background: white;
+		display: block;
+		float: left;
+		height: 4em;
+		ul{
+			display: block;
+			li{
+				width: 2em;
+				padding-top: 0.5em;
+				margin-left: 0.5em;
+				float: left;
+				font-size: 2em;
+			}
+		}
+	}
+}
